@@ -1,0 +1,305 @@
+/* global font */
+html * {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    letter-spacing: 0.04rem;
+  }
+  
+  html,
+  body * {
+    scroll-behavior: smooth;
+  }
+  
+  /* navbar style */
+  #navbar {
+    width: 100%;
+    background-color: #003b71;
+    z-index: 1;
+    position: fixed;
+    top: -80px;
+    transition: top 0.3s;
+  }
+  
+  #navbar .right {
+    float: right;
+    margin-right: 32px;
+  }
+  
+  #navbar img {
+    height: 75px;
+    width: 250px;
+    display: inline;
+  }
+  
+  #navbar a {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white !important;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline;
+    text-align: center;
+    padding: 32px 16px;
+  }
+  
+  /* mobile styling for navbar */
+  @media only screen and (max-width: 600px) {
+    #navbar img {
+      height: 50px;
+      width: 150px;
+      padding-top: 12px;
+    }
+  }
+  
+  /* contact section spacing */
+  .contact-section {
+    text-align: center;
+    height: 75px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 48px;
+  }
+  /* contact button */
+  .contact-section a {
+    margin-right: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 100vh;
+    font-size: 16px;
+    font-weight: 500;
+    color: #003b71;
+    border: 1.75px solid rgba(24, 64, 105, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  /* contact button hover */
+  .contact-section a:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* mobile style for button */
+  @media only screen and (max-width: 600px) {
+    .contact-section a {
+      font-size: 14px;
+    }
+  }
+  
+  /* header container */
+  #header {
+    padding-top: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 80vh;
+    max-height: 80vh;
+    background-color: rgb(179, 179, 179, 0.3);
+  }
+  
+  /* title style */
+  #header img {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    display: block;
+  }
+  
+  #header h4 {
+    text-align: center;
+    font-weight: 400;
+    color: #003b71;
+    margin: auto;
+    display: block;
+  }
+  
+  /* mobile style for header */
+  @media only screen and (max-width: 600px) {
+    #header {
+      height: 75vh;
+    }
+    #header img {
+      padding-top: 100px;
+      width: 320px;
+      height: 110px;
+    }
+    #header h4 {
+      font-size: 14px;
+      color: #003b71;
+    }
+  }
+  
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* 
+  @media only screen and (max-width: 600px) {
+    #background-video {
+      display: none;
+    }
+  } */
+  
+  /* Services section styling */
+  #services {
+    background-color: rgb(169, 179, 188, 0.7);
+    height: 75vh;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #services h1 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: #436083;
+  }
+  
+  #services h4 {
+    color: #436083;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  #services p {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  
+  /* services mobile style */
+  @media only screen and (max-width: 600px) {
+    #services {
+      height: 125vh;
+    }
+    #services h4 {
+      text-align: left;
+    }
+  
+    #funtional-medicine {
+      text-align: right !important;
+    }
+    #services p {
+      text-align: left;
+    }
+  }
+  
+  /* About Tanae section */
+  #about {
+    background-color: rgb(155, 166, 177, 0.7);
+    height: 80vh;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #about h1 {
+    padding-top: 75px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    color: #436083;
+  }
+  
+  /* image styling */
+  #pro-headshot {
+    height: 325px;
+    width: 325px;
+    border-radius: 50%;
+    border: 2px solid #ecb879;
+    float: left;
+    shape-outside: circle();
+    margin-right: 12px;
+  }
+  
+  #about p {
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 50px;
+    color: white;
+    text-indent: 5ch;
+    line-height: 22px;
+  }
+  
+  /* about mobile style */
+  @media only screen and (max-width: 600px) {
+    #about {
+      height: 140vh;
+    }
+    #about p {
+      font-size: 14px;
+      font-weight: 300;
+      text-indent: 0%;
+    }
+  }
+  
+  /* footer styling */
+  #footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 5vh;
+    background-color: rgb(0, 59, 113, 0.6);
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+  }
+  
+  #footer p {
+    font-size: 14px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #footer {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      height: 9vh;
+      display: block;
+      align-items: center;
+    }
+    #footer p {
+      padding-top: 16px;
+      margin-left: 82px;
+    }
+  
+    #footer a {
+   margin-left: 72px;
+    }
+  }
+  

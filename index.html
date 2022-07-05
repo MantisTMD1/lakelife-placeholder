@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lakelife</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="./videos/video.mp4" type="video/mp4" />
+    </video>
+    <div id="navbar">
+        <a> <img  src="images/0.png" class = "refresh" href= "#" alt="Lakelife logo"> </a>
+        <a class="right" href="#about">ABOUT</a>
+        <a class="right" href="#services">SERVICES</a>
+    </div>
+  
+
+    <div id="header">
+        <img src="images/lake-life.png" alt="Lakelife logo"/>
+        <h4>Adding community and nature to your wellness</h4>
+        <div class="contact-section">
+            <a href="tel:715-205-5560">Call us today</a>
+        </div>
+    
+
+    </div>
+
+    <div id="services" >
+        <h1>Our Services</h1>
+        <br></br>
+
+
+        <div class = "wrapper" data-aos="fade-right" data-aos-duration="1800">
+        <h4>Chiropractic & Kinesiology</h4>
+        <p>
+            When assessing one’s health, spinal balance is critical to optimal
+            wellness. A spine that is aligned will allow the nervous system to send
+            proper signals to our organs and muscles. Muscle balance and movement is
+            also critical for a healthy nervous system and body. At Lakelife, we
+            blend the best of both worlds. We focus on creating a healthy nervous
+            system and spinal balance through chiropractic adjustments. We reinforce
+            spinal balance through muscle balance. You may be asked to do very
+            specific exercises, as well as incorporating a regular exercise routine
+            as part of your treatment plan. Doing this will help you achieve lasting
+            change and increased quality of life.
+        </p>
+    </div>
+
+
+
+
+        <br></br>
+
+        <div class = "wrapper" data-aos="fade-left" data-aos-duration="1800">
+
+        <h4 id = "funtional-medicine">Functional Medicine and Laboratory Testing</h4>
+        <p id = "funtional-medicine">
+            Functional Medicine is looking at the root cause of disease, and
+            applying natural therapies and lifestyle solutions tofix health
+            challenges long term. When receiving traditional treatment, patients
+            often feel better temporarily, but the problem is still underlying.
+            Functional Medicine is a preventative and systems based approach. When
+            looking at body systems and how they are intertwined, cause and effect
+            can be addressed, and lasting change can be achieved. Functional
+            Medicine can be utilized by anyone, whether you are critically ill or an
+            elite athlete. Our bodies are dynamic and we either feed disease or
+            health every single day. It’s time to be intentional about our health
+            and be the best versions of ourselves!
+        </p>
+
+
+    </div>
+        <br></br>
+
+        <div class = "wrapper" data-aos="fade-right" data-aos-duration="1800">  
+        <h4>Acupuncture</h4>
+        <p>
+            Acupuncture is a safe and effective way to reduce stress and pain. Very
+            small needles are inserted superficially into the skin to help
+            facilitate healing. There are numerous conditions that acupuncture can
+            help. Dry needling and cupping can also be incorporated for certain
+            musculoskeletal concerns.
+        </p>
+    </div>
+
+</div>
+
+
+    <div id="about" data-aos="zoom-in" data-aos-duration="3000">
+
+
+        <h1>Meet Dr. Tanae Berg</h1>
+
+        <img src = "images/headshot.jpg" id = "pro-headshot" alt="professional headshot" loading="lazy"/>
+
+
+        <p>Dr. Tanae was born and raised in Rice Lake, WI. She has had a lifelong passion for health and wellness. She
+            grew up going to a chiropractor who practiced Applied Kinesiology and Functional Medicine. After a life
+            changing event, she decided that she wanted to help people in this way too.
+        
+            Dr. Tanae received her Bachelor’s of Human Biology and Doctorate of Chiropractic from Northwestern Health
+            Sciences University in 2014. Wanting to further her knowledge and skills, she ventured to Texas to work
+            alongside a world renowned practitioner for 6 years. She worked with Olympic and professional athletes
+            including track athletes, basketball players, and boxers.
+       
+            With continued interest in Functional Medicine and complex cases, she became a certified Functional Medicine
+            Practitioner. She also received postdoctoral training and board certification in Acupuncture.
+        
+            Although Dr. Tanae’s opportunity in Houston was amazing, her heart was in the Midwest, and she decided to
+            move back to the Twin Cities in 2020. She joined an integrative health clinic working alongside
+            chiropractors, a nurse practitioner, registered nurses, a nutritionist, and a health coach. During this time
+            she got to experience a functional health care model that blended alternative and conventional medicine.
+       
+            In 2021, Dr. Tanae met her husband. It was at this time that she decided to create her Lakelife dream that
+            was envisioned 2 years prior, and start an integrative health clinic in Wisconsin.
+        
+            Dr. Tanae currently helps teach Applied Kinesiology at Northwestern Health Sciences University. She loves to
+            give back to her profession and help create great practitioners so more people can get well in all areas of
+            life.
+        
+            In her free time, Dr. Tanae loves to spend time with her husband, family, and friends. You can find her
+            relaxing by a lake or river, hiking, or taking in a beautiful sunset. She also loves to read, cook, and
+            workout. She believes in slowing down and enjoying all seasons of life, as well as making physical,
+            chemical, and emotional health a top priority for her and others that cross her path.</p>
+   
+   
+    </div>
+
+<div id = "footer">
+
+    <a class= "home" href= "#header">
+Home
+    </a>
+    <a class= "home" href="tel:715-205-5560">
+        Phone
+            </a>
+            <a class= "home" href = "mailto: doctortanae@gmail.com">
+                Email
+                    </a>
+<p> Official website coming soon. Stay tuned!</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+// function pop ups navbar when scrolling down
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+        </script>
+
+<script>
+// scroll animation initilization 
+    AOS.init();
+    </script>
+</body>
+
+</html>
