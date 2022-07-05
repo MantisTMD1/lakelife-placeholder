@@ -253,7 +253,7 @@ body * {
 /* about mobile style */
 @media only screen and (max-width: 600px) {
   #about {
-    height: 125vh;
+    height: 165vh;
   }
   #about p {
     font-size: 14px;
