@@ -191,7 +191,7 @@ html * {
   /* services mobile style */
   @media only screen and (max-width: 600px) {
     #services {
-      height: 125vh;
+      height: 150vh;
     }
     #services h4 {
       text-align: left;
@@ -247,12 +247,16 @@ html * {
   /* about mobile style */
   @media only screen and (max-width: 600px) {
     #about {
-      height: 140vh;
+      height: 175vh;
     }
     #about p {
       font-size: 14px;
       font-weight: 300;
       text-indent: 0%;
+    }
+    #pro-headshot{
+      height: 250px;
+      width: 250px;
     }
   }
   
@@ -289,17 +293,12 @@ html * {
       padding-left: 15px;
       margin-right: auto;
       margin-left: auto;
-      height: 9vh;
+      height: 12vh;
       display: block;
       align-items: center;
     }
-    #footer p {
-      padding-top: 16px;
-      margin-left: 82px;
-    }
-  
-    #footer a {
-   margin-left: 72px;
-    }
+   #footer P{
+  padding-top: 12px;
+   }
   }
   
