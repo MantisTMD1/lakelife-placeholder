@@ -149,12 +149,12 @@ html * {
     background-position: center;
     background-repeat: no-repeat;
   }
-  /* 
+  
   @media only screen and (max-width: 600px) {
     #background-video {
       display: none;
     }
-  } */
+  }
   
   /* Services section styling */
   #services {
@@ -296,6 +296,9 @@ html * {
       height: 12vh;
       display: block;
       align-items: center;
+    }
+    #footer a{
+      margin-right: 12px;
     }
    #footer P{
   padding-top: 12px;
