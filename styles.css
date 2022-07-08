@@ -258,7 +258,7 @@ mobile styling for navbar
 /* services mobile style */
 @media only screen and (max-width: 600px) {
   #services {
-    height: 130vh;
+    height: 150vh;
   }
   #services h4 {
     text-align: left;
@@ -315,7 +315,7 @@ mobile styling for navbar
 /* about mobile style */
 @media only screen and (max-width: 600px) {
   #about {
-    height: 135vh;
+    height: 165vh;
   }
   #about p {
     font-size: 14px;
