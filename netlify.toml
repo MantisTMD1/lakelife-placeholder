@@ -1,0 +1,13 @@
+# Static site: no build step, publish the repo root
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
