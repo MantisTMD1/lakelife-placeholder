@@ -940,3 +940,89 @@ img {
     aspect-ratio: 1;
   }
 }
+
+/* ---------- Service details ---------- */
+.service-sub {
+  font-size: 1.15rem;
+  margin: 32px 0 14px;
+}
+
+.condition-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.condition-list li {
+  background: var(--lake-soft);
+  color: var(--navy-deep);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.service p.helps {
+  margin-top: 16px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--navy);
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.test-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.test-card h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--navy-deep);
+  margin: 0 0 8px;
+}
+
+.service .test-card p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.service .test-card p.test-areas {
+  color: var(--ink);
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .test-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Hours ---------- */
+.hours {
+  margin-bottom: 20px;
+}
+
+.hours h3,
+.contact-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.hours p,
+.contact-card p {
+  margin: 0;
+}
