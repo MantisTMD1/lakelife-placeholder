@@ -791,3 +791,152 @@ img {
     aspect-ratio: 1;
   }
 }
+
+.cta-actions,
+.thanks-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.thanks-actions {
+  justify-content: flex-start;
+}
+
+/* ---------- Contact ---------- */
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.contact-form {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(24px, 4vw, 40px);
+  box-shadow: var(--shadow);
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+.optional {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  background: var(--white);
+  border-color: var(--lake);
+  box-shadow: 0 0 0 4px rgba(122, 174, 214, 0.25);
+}
+
+.field-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+
+.contact-form .btn {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+}
+
+.contact-details {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-card {
+  background: var(--lake-soft);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.contact-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.contact-card a {
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-card address {
+  font-style: normal;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 860px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-map .section-head {
+  margin-bottom: 32px;
+}
+
+.map--wide {
+  aspect-ratio: 16 / 7;
+}
+
+@media (max-width: 860px) {
+  .map--wide {
+    aspect-ratio: 1;
+  }
+}
