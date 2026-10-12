@@ -1,5 +1,7 @@
-# Static site: no build step, publish the repo root
+# Static site: no build step, publish the repo root.
+# The command overrides any build command saved in the Netlify dashboard.
 [build]
+  command = "echo 'Static site, no build step'"
   publish = "."
 
 [[headers]]
