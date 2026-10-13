@@ -42,20 +42,26 @@ document.querySelectorAll("[data-year]").forEach(function (el) {
   el.textContent = new Date().getFullYear();
 });
 
-// Background video: only on larger screens, after the page has loaded,
-// and not for visitors who prefer reduced motion or are saving data.
-// Phones keep the still poster image.
+// Background video: loaded after the page so it never delays content.
+// Phones get a smaller vertical cut. Skipped for visitors who prefer
+// reduced motion or are saving data; they keep the still poster image.
 (function () {
   const video = document.querySelector(".hero-video[data-src]");
   if (!video) return;
   const saveData = navigator.connection && navigator.connection.saveData;
-  const wide = window.matchMedia("(min-width: 768px)").matches;
   const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!wide || still || saveData) return;
-  window.addEventListener("load", function () {
-    video.src = video.dataset.src;
+  if (still || saveData) return;
+  const narrow = window.matchMedia("(max-width: 767px)").matches;
+  const src = narrow && video.dataset.srcMobile ? video.dataset.srcMobile : video.dataset.src;
+  function start() {
+    video.src = src;
     video.play().catch(function () {});
-  });
+  }
+  if (document.readyState === "complete") {
+    start();
+  } else {
+    window.addEventListener("load", start);
+  }
 })();
 
 // Google Maps embeds are heavy, so load them only when scrolled near
