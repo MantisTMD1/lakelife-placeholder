@@ -422,12 +422,8 @@ img {
   margin: 0 auto 28px;
 }
 
-.hero h1 {
-  color: var(--white);
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 36px;
+.hero-title {
+  margin: 0;
 }
 
 .hero-actions {
@@ -1128,7 +1124,7 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--lake);
-  margin-bottom: 12px;
+  margin-bottom: 36px;
 }
 
 .hero-services span {
