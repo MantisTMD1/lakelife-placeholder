@@ -36,3 +36,8 @@
   }, { rootMargin: "0px 0px -10% 0px" });
   items.forEach(function (el) { observer.observe(el); });
 })();
+
+// Keep the footer copyright year current
+document.querySelectorAll("[data-year]").forEach(function (el) {
+  el.textContent = new Date().getFullYear();
+});
